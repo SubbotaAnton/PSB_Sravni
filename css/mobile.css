@@ -1,0 +1,87 @@
+@media only screen and (max-device-width : 640px) {
+
+    /* common classes */
+
+    .content {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* HEADER */
+
+    .header {
+        height: 60px;
+    }
+
+    .psbLogo {
+        top: 16px;
+        left: 20px;
+    }
+
+    .psbIcon {
+        width: 98px;
+        height: 30px;
+        background: url('../images/psb_mobile_logo.svg') no-repeat left top;
+    }
+
+    .sravniLogo {
+        right: 20px;
+        top: 15px;
+    }
+
+    .sravniIcon {
+        width: 163px;
+        height: 30px;
+        background: url('../images/sravni_mobile_logo.svg') no-repeat left top;
+    }
+
+    /* howToSaveMoney */
+
+    .howToSaveMoney {
+        height: auto;
+    }
+
+    .mainSlogan {
+        padding-top: 20px;
+        width: 100%;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 53px;
+    }
+
+    .howToSaveMoneyIcon {
+        position: relative;
+        top: 0;
+        margin-top: 20px;
+    }
+
+    /* guideFastPayments */
+
+    .guideFastPayments {
+        height: auto;
+    }
+
+    .guideSlogan {
+        width: auto;
+        padding-top: 32px;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .guideButton {
+        position: relative;
+        top: 0;
+        padding: 30px 0 40px;
+    }
+
+    .guideLink {
+        width: 100%;
+        height: 66px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 66px;
+    }
+
+}
