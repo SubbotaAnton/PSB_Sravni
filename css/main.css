@@ -19,6 +19,65 @@ body {
     min-height: 100vh;
 }
 
+/* custom radio-buttons */
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 36px;
+    border: 4px solid #EA5616;
+    border-radius: 36px;
+    box-sizing: border-box;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #EA5616;
+}
+
 /* common classes */
 
 .content {
@@ -34,6 +93,7 @@ body {
 }
 
 .whiteLine {
+    position: relative;
     display: block;
     height: 4px;
     background-color: #ffffff;
@@ -44,9 +104,9 @@ body {
 
 .ellipseIcon {
     display: block;
-    width: 167px;
-    height: 149px;
-    background: #424FD3;
+    width: 149px;
+    height: 167px;
+    background: url('../images/stamp.svg') no-repeat left top;
 }
 
 .orangeText {
@@ -179,22 +239,48 @@ body {
 /* easyGuide */
 
 .easyGuide {
+    position: relative;
     background-color: #323241;
     padding: 28px 0;
 }
 
+.easyGuideIcon {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 269px;
+    height: 277px;
+    background: url('../images/card.svg') no-repeat right top;
+}
+
 .easyGuide p {
+    width: 733px;
     font-weight: 500;
     font-size: 50px;
     line-height: 59px;
     color: #FFFFFF;
 }
 
+.easyGuide .content {
+    z-index: 1;
+}
+
 /* benefits */
 
 .benefits {
+    position: relative;
     padding: 130px 0 96px;
 }
+
+.benefitsIcon {
+    position: absolute;
+    top: -224px;
+    left: 0;
+    width: 180px;
+    height: 345px;
+    background: url('../images/charts.svg') no-repeat right top;
+}
+
 
 .benefits ul {
     display: flex;
@@ -210,4 +296,70 @@ body {
     font-size: 35px;
     line-height: 41px;
     color: #323241;
+}
+
+/* formGuide */
+
+.formGuide {
+    background-color: #323241;
+}
+
+.answerOnQuestion {
+    font-size: 50px;
+    line-height: 59px;
+    width: 860px;
+    padding: 28px 0 24px;
+}
+
+.clickOnThis {
+    position: absolute;
+    right: 0;
+    top: -157px;
+    width: 315px;
+    height: 336px;
+    background: url('../images/click.svg') no-repeat left top;
+}
+
+.areaOfBusiness {
+    padding: 28px 0 32px;
+    width: 800px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: #EA5616
+}
+
+/* businessList */
+
+.businessList {
+    padding-top: 90px;
+}
+
+.businessFormList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.businessFormList label {
+    padding-left: 60px;
+    padding-bottom: 87px;
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 35px;
+    line-height: 41px;
+    color: #323241;
+}
+
+.submitForm {
+    border: none;
+    display: block;
+    width: 992px;
+    height: 86px;
+    background: #EA5616;
+    font-size: 25px;
+    line-height: 86px;
+    color: #FFFFFF;
+    cursor: pointer;
 }

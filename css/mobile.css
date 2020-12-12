@@ -9,8 +9,9 @@
     }
 
     .ellipseIcon {
-        width: 107px;
-        height: 95px;
+        width: 95px;
+        height: 107px;
+        background: url('../images/stamp_mobile.svg') no-repeat left top;
     }
 
     .check {
@@ -18,6 +19,41 @@
         height: 12px;
         background: url('../images/check_mobile.svg') no-repeat left top;
         top: 5px;
+    }
+
+    /* custom radio-buttons */
+
+    /* Customize the label (the container) */
+    .container {
+        padding-left: 35px;
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        height: 18px;
+        width: 18px;
+        border: 2px solid #EA5616;
+        border-radius: 18px;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 2px;
+        top: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
     }
 
     /* HEADER */
@@ -120,7 +156,17 @@
         padding: 20px 0;
     }
 
+    .easyGuideIcon {
+        position: absolute;
+        top: -34px;
+        right: 0;
+        width: 108px;
+        height: 101px;
+        background: url('../images/card_mobile.svg') no-repeat right top;
+    }
+
     .easyGuide p {
+        width: 330px;
         font-size: 25px;
         line-height: 29px;
     }
@@ -142,5 +188,48 @@
         line-height: 21px;
         width: 100%;
         padding: 0 0 30px 35px;
+    }
+
+    .benefitsIcon {
+        display: none;
+    }
+
+    /* formGuide */
+
+    .answerOnQuestion {
+        font-size: 25px;
+        line-height: 29px;
+        width: auto;
+        padding: 20px 0;
+    }
+
+    .clickOnThis {
+        display: none;
+    }
+
+    .areaOfBusiness {
+        padding: 20px 0;
+        width: auto;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    /* businessList */
+
+    .businessList {
+        padding-top: 30px;
+    }
+
+    .businessFormList {
+        flex-direction: column;
+    }
+
+    .businessFormList label {
+        padding-left: 35px;
+        padding-bottom: 29px;
+        width: auto;
+        font-size: 18px;
+        line-height: 21px;
     }
 }
