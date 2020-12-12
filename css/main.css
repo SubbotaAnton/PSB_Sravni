@@ -42,6 +42,27 @@ body {
     margin: 0;
 }
 
+.ellipseIcon {
+    display: block;
+    width: 167px;
+    height: 149px;
+    background: #424FD3;
+}
+
+.orangeText {
+    color: #EA5616;
+}
+
+.check {
+    display: block;
+    width: 32px;
+    height: 24px;
+    background: url('../images/check.svg') no-repeat left top;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
 /* HEADER */
 
 .header {
@@ -134,4 +155,59 @@ body {
     color: #FFFFFF;
     text-align: center;
     cursor: pointer;
+}
+
+/* prehistory */
+
+.prehistory {
+    padding: 70px 0;
+}
+
+.prehistory p {
+    color: #323241;
+    font-size: 35px;
+    line-height: 41px;
+    margin: 30px 0;
+}
+
+.prehistoryIcon {
+    position: absolute;
+    left: -193px;
+    top: -131px;
+}
+
+/* easyGuide */
+
+.easyGuide {
+    background-color: #323241;
+    padding: 28px 0;
+}
+
+.easyGuide p {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+/* benefits */
+
+.benefits {
+    padding: 130px 0 96px;
+}
+
+.benefits ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits li {
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 70px;
+    padding-bottom: 100px;
+    font-size: 35px;
+    line-height: 41px;
+    color: #323241;
 }
