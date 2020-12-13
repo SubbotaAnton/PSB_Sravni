@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--   meta for sharing -->
+    <meta property="og:url"             content="Ссылка на место где залита страница" />
+    <meta property="og:title"           content="Заголовок" />
+    <meta property="og:description"     content="Описание" />
+    <meta property="og:image"           content="Рабочая ссылка на картинку для шара" />
+    <!--   meta for sharing -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
@@ -48,16 +55,126 @@
             <p>Как работает система быстрых платежей?</p>
         </div>
     </section>
-    <section class="benefits">
+    <section class="benefits instruction">
         <div class="benefitsIcon"></div>
         <div class="content">
             <ul>
-                <li><span class="check"></span>Вы заключаете договор с банком, который поддерживает СБП</li>
-                <li><span class="check"></span>Для оплаты не нужны терминалы и касса</li>
-                <li><span class="check"></span>Покупатель сканирует QR-код банковским приложением - остается только ввести сумму и платеж пройдет!</li>
-                <li><span class="check"></span>Вам предоставляют специальный уникальный QR-код. В него зашиты ваши реквизиты. Вы распечатываете его и устанавливаете в удобном и видном месте.</li>
+                <li><span class="check"></span><span id="benefits_1">Вы заключаете договор с банком, который поддерживает СБП</span></li>
+                <li><span class="check"></span><span id="benefits_2">Для оплаты не нужны терминалы и касса</span></li>
+                <li><span class="check"></span><span id="benefits_3">Покупатель сканирует QR-код банковским приложением - остается только ввести сумму и платеж пройдет!</span></li>
+                <li><span class="check"></span><span id="benefits_4">Вам предоставляют специальный уникальный QR-код. В него зашиты ваши реквизиты. Вы распечатываете его и устанавливаете в удобном и видном месте.</span></li>
             </ul>
         </div>
     </section>
+    <section class="benefitsOfQR">
+        <div class="benefitsOfQRIcon"></div>
+        <div class="content">
+            <p>Какие преимущества бизнесу дает использование QR-кодов?</p>
+        </div>
+    </section>
+    <section class="tellMeAboutBenefits">
+        <div class="tellMeAboutBenefitsIcon"></div>
+        <div class="content">
+            <p>Самые низкие комиссии за прием безналичных платежей</p>
+            <p class="percent">до 0,7% </p>
+            <p>Комиссия для ресторанов и кафе обычно</p>
+            <p class="percent">0,4%</p>
+            <p class="remark">При этом: деньги зачисляются мгновенно, можно платить круглосуточно</p>
+        </div>
+    </section>
+    <section class="darkHeader">
+        <div class="whatINeedToUseQRIcon"></div>
+        <div class="content">
+            <p>Что должно быть у покупателя, чтобы оплатить с помощью QR-кода?</p>
+        </div>
+    </section>
+    <section class="thatIsWhatYouNeed">
+        <div class="content">
+            <p>
+                У покупателя должно быть скачено на телефон приложения банка, который участвует в Системе.
+                Сейчас это уже все топ-банки России. Нужно открыть приложение, выбрать пункт -
+                оплатить по QR-коду, отсканировать его, сверить и подтвердить оплату
+            </p>
+        </div>
+    </section>
+    <section class="darkHeader">
+        <div class="wasPaymentSuccessfulIcon"></div>
+        <div class="content">
+            <p>Если при оплате нет чека, как понять, успешен ли платеж?</p>
+        </div>
+    </section>
+    <section class="bankInformsYou">
+        <div class="content">
+            <p>Ваш банк моментально уведомляет вас о приеме платежа с помощью смс</p>
+        </div>
+    </section>
+    <section class="darkHeader">
+        <div class="isItSafeIcon"></div>
+        <div class="content">
+            <p>Насколько это безопасно? Можно ли подделать QR-код?</p>
+        </div>
+    </section>
+    <section class="whiteHeader uniqueQR">
+        <div class="content">
+            <p>QR-код - уникальный. Его выпускает только Системы Быстрых Платежей, специально для вашего бизнеса. Подделать его невозможно</p>
+        </div>
+    </section>
+    <section class="darkHeader howLongDoesQRLive">
+        <div class="howLongDoesQRLiveIcon"></div>
+        <div class="content">
+            <p>Сколько живет QR-код?</p>
+        </div>
+    </section>
+    <section class="whiteHeader">
+        <div class="content">
+            <p id="liveOfQR">Динамический QR-код генерится кассой индивидуально для каждого клиента и срок его жизни - 72 часа. В него уже зашита цена</p>
+        </div>
+    </section>
+    <section class="darkHeader howToMotivate">
+        <div class="howToMotivateIcon"></div>
+        <div class="content">
+            <p>Как мотивировать клиентов платить через QR-код?</p>
+        </div>
+    </section>
+    <section class="whiteHeader commissionQR">
+        <div class="content">
+            <p>
+                Комиссия за безналичный платеж через Систему Быстрых Платежей гораздо ниже, чем средняя ставка эквайринга.
+                Чтобы оплата через QR-код превратилась у покупателей в привычку, первое время можно,
+                за счет экономии, мотивировать их с помощью небольших бонусов и подарков
+            </p>
+            <p>Это не только сохранит деньги вашему бизнесу, но и сработает на лояльность</p>
+        </div>
+    </section>
+    <section class="darkHeader howToJoinSystem">
+        <div class="content">
+            <p>Как подключиться к Системе Быстрых Платежей?</p>
+        </div>
+    </section>
+    <div class="whiteLine"></div>
+    <section class="darkHeader onlineApplication">
+        <div class="content">
+            <p>
+                Просто <span class="orangeText">оставьте онлайн заявку</span> и
+                уже на следующий день вы сможете начать принимать платежи без дополнительного оборудования.
+            </p>
+            <button type="submit" class="submitForm" id="submitForm">ОСТАВИТЬ ОНЛАЙН ЗАЯВКУ</button>
+        </div>
+    </section>
+    <section class="whiteHeader shareGuide">
+        <div class="content">
+            <p>Поделиться гайдом</p>
+            <div class="shareIcons">
+                <span id="vkShare" class="shareIcon vkIcon"></span>
+                <span id="okShare" class="shareIcon okIcon"></span>
+                <span id="twitterShare" class="shareIcon twitterIcon"></span>
+                <span id="telegramShare" class="shareIcon telegramIcon"></span>
+                <span id="facebookShare" class="shareIcon facebookIcon"></span>
+                <span id="whatsUpShare" class="shareIcon whatsUpIcon"></span>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./js/result.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-(function (global) {
+(function () {
 
     document.getElementById('submitForm').addEventListener('click', onSubmit, false);
 
@@ -7,7 +7,9 @@
 
         const checkedRadioButton = document.querySelector('.businessFormList input[type="radio"]:checked')
 
-        console.log(checkedRadioButton.value);
+        if (checkedRadioButton) {
+            document.location = `./result.html?data=${checkedRadioButton.value}`;
+        }
     }
 
-}(window));
+}());

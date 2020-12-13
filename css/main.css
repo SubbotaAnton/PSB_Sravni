@@ -113,6 +113,30 @@ body {
     color: #EA5616;
 }
 
+.darkHeader {
+    position: relative;
+    background-color: #323241;
+    padding: 28px 0 23px;
+}
+
+.darkHeader p {
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.whiteHeader {
+    position: relative;
+    padding: 100px 0;
+}
+
+.whiteHeader p {
+    font-size: 35px;
+    line-height: 41px;
+    color: #323241;
+}
+
+
 .check {
     display: block;
     width: 32px;
@@ -334,6 +358,7 @@ body {
 
 .businessList {
     padding-top: 90px;
+    padding-bottom: 57px;
 }
 
 .businessFormList {
@@ -449,4 +474,260 @@ body {
     width: 426px;
     height: 448px;
     background: url('../images/how_it_works.svg') no-repeat left top;
+}
+
+/* instruction */
+
+.instruction {
+    padding: 100px 0 95px;
+}
+
+
+/* benefitsOfQR */
+
+.benefitsOfQR {
+    position: relative;
+    background-color: #323241;
+    padding: 28px 0 23px;
+}
+
+.benefitsOfQR p {
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.benefitsOfQRIcon {
+    position: absolute;
+    left: 0;
+    top: -177px;
+    width: 192px;
+    height: 238px;
+    background: url('../images/card_right.svg') no-repeat left top;
+}
+
+/* tellMeAboutBenefits */
+
+.tellMeAboutBenefits {
+    position: relative;
+    padding: 100px 0;
+}
+
+.tellMeAboutBenefitsIcon {
+    position: absolute;
+    right: 35px;
+    top: -108px;
+    width: 391px;
+    height: 632px;
+    background: url('../images/big_qr.svg') no-repeat left top;
+}
+
+.tellMeAboutBenefits p {
+    width: 770px;
+    font-size: 35px;
+    line-height: 41px;
+    color: #323241;
+}
+
+.tellMeAboutBenefits .percent {
+    padding: 23px 0 100px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    color: #EA5616;
+}
+
+.tellMeAboutBenefits .remark {
+    width: 937px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/* whatINeedToUseQR */
+
+.whatINeedToUseQRIcon {
+    position: absolute;
+    left: 0;
+    top: -97px;
+    width: 210px;
+    height: 632px;
+    background: url('../images/pay_via_qr.svg') no-repeat left top;
+}
+
+.whatINeedToUseQR p {
+    width: 900px;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+/* thatIsWhatYouNeed */
+
+.thatIsWhatYouNeed {
+    padding: 100px 0;
+}
+
+.thatIsWhatYouNeed p {
+    width: 934px;
+    font-size: 35px;
+    line-height: 41px;
+    color: #323241;
+}
+
+/* wasPaymentSuccessful */
+
+.wasPaymentSuccessfulIcon {
+    position: absolute;
+    right: 57px;
+    top: -89px;
+    width: 359px;
+    height: 348px;
+    background: url('../images/payment_successful.svg') no-repeat left top;
+}
+
+.wasPaymentSuccessful p {
+    width: 880px;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+/* bankInformsYou */
+
+.bankInformsYou {
+    padding: 100px 0;
+}
+
+.bankInformsYou p {
+    width: 678px;
+    font-size: 35px;
+    line-height: 41px;
+    color: #323241;
+}
+
+/* isItSafe */
+
+.isItSafeIcon {
+    position: absolute;
+    left: 0;
+    top: -109px;
+    width: 330px;
+    height: 400px;
+    background: url('../images/is_it_safe.svg') no-repeat left top;
+}
+
+/* uniqueQR */
+
+.uniqueQR p {
+    width: 750px;
+}
+
+/* howLongDoesQRLive */
+
+.howLongDoesQRLive {
+    padding-bottom: 26px;
+}
+
+.howLongDoesQRLiveIcon {
+    position: absolute;
+    right: 0;
+    top: -140px;
+    width: 460px;
+    height: 409px;
+    background: url('../images/qr_live.svg') no-repeat left top;
+}
+
+/* howToMotivate */
+
+.howToMotivate {
+    padding: 28px 0 20px;
+}
+
+.howToMotivateIcon {
+    position: absolute;
+    left: 0;
+    top: -47px;
+    width: 206px;
+    height: 417px;
+    background: url('../images/qr_motivation.svg') no-repeat left top;
+}
+
+/* commissionQR */
+
+.commissionQR p {
+    margin-bottom: 25px;
+}
+
+/* howToJoinSystem */
+
+.howToJoinSystem p {
+    padding: 28px 0 32px;
+}
+
+/* onlineApplication */
+
+.onlineApplication {
+    padding: 28px 0 30px;
+}
+
+.onlineApplication p {
+    width: 874px;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.onlineApplication .submitForm {
+    margin: 30px auto 0;
+}
+
+/* shareGuide */
+
+.shareGuide {
+    padding: 70px 0 110px;
+}
+
+.shareGuide p {
+    text-align: center;
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.shareIcons {
+    display: flex;
+    width: 600px;
+    margin: 52px auto 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shareIcon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.vkIcon {
+    background-image: url('../images/vk.svg');
+}
+
+.okIcon {
+    background-image: url('../images/ok.svg');
+}
+
+.twitterIcon {
+    background-image: url('../images/twitter.svg');
+}
+
+.telegramIcon {
+    background-image: url('../images/telegram.svg');
+}
+
+.facebookIcon {
+    background-image: url('../images/facebook.svg');
+}
+
+.whatsUpIcon {
+    background-image: url('../images/whatsup.svg');
 }
