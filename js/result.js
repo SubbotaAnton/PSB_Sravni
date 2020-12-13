@@ -12,6 +12,11 @@
         return null;
     }
 
+    function openShareWindow(url) {
+        const options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
+        window.open(url,'sharer', options);
+    }
+
     const formResult = getQueryVariable('data')
 
     switch (formResult) {
@@ -43,39 +48,63 @@
     }
 
     const shareText = ``;
-    const absoluteURL = '';
+    const absoluteURL = ''; // TODO где будет размещена страница?
 
     // vk share
 
-    // TODO
+    document.getElementById('okShare').addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = `'http://vk.com/share.php?url=${absoluteURL}`;
+        openShareWindow(url);
+    });
 
     // ok share
 
-    // TODO
+    document.getElementById('okShare').addEventListener('click', (e) => {
+        e.preventDefault();
+        // или эта?
+        // http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl={ссылка}&st.comments={комментарий}
+        const url = `https://connect.ok.ru/offer?url=${absoluteURL}`;
+        openShareWindow(url);
+    });
 
     // twitter share
     document.getElementById('twitterShare').addEventListener('click', (e) => {
         e.preventDefault();
         const url = `https://twitter.com/intent/tweet?text=${encodeURI(shareText)}&url=${absoluteURL}`;
-        const options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
-        window.open(url,'sharer',options);
+        openShareWindow(url);
     });
 
     // telegram share
 
-    // TODO
+    document.getElementById('telegramShare').addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = `https://t.me/share/url?url=${encodeURI(absoluteURL)}&text=${encodeURI(shareText)}`;
+        openShareWindow(url);
+    });
+
 
     // fb share
 
     document.getElementById('facebookShare').addEventListener('click', (e) => {
         e.preventDefault();
         const url = `https://www.facebook.com/sharer/sharer.php?u=${absoluteURL}`;
-        const options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
-        window.open(url,'sharer',options);
+        openShareWindow(url);
     });
 
-    // whatsup share
+    // whatsUp share
 
-    // TODO
+    document.getElementById('whatsUpShare').addEventListener('click', (e) => {
+        e.preventDefault();
+        let url;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // mobile
+            url = `https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`;
+        } else {
+            // desktop
+            url = `https://web.whatsapp.com/send?l=en&text=${encodeURIComponent(window.location.href)}`;
+        }
+        openShareWindow(url);
+    });
 
 }(window));
