@@ -705,6 +705,7 @@ body {
     width: 64px;
     height: 64px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     cursor: pointer;
 }
 

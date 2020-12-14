@@ -1,4 +1,4 @@
-(function (global) {
+(function () {
 
     function getQueryVariable(variable) {
         const query = window.location.search.substring(1);
@@ -47,14 +47,14 @@
             document.getElementById('benefits_4').innerText = 'Покупатель сканирует QR-код банковским приложением и подтверждает платеж';
     }
 
-    const shareText = ``;
-    const absoluteURL = ''; // TODO где будет размещена страница?
+    const shareText = 'Как не платить банку за эквайринг? Все, что нужно знать, чтобы подключить ваш бизнес к системе быстрых платежей и экономить.';
+    const absoluteURL = document.location.href;
 
     // vk share
 
-    document.getElementById('okShare').addEventListener('click', (e) => {
+    document.getElementById('vkShare').addEventListener('click', (e) => {
         e.preventDefault();
-        const url = `'http://vk.com/share.php?url=${absoluteURL}`;
+        const url = `http://vk.com/share.php?url=${absoluteURL}`;
         openShareWindow(url);
     });
 
@@ -107,4 +107,4 @@
         openShareWindow(url);
     });
 
-}(window));
+}());
