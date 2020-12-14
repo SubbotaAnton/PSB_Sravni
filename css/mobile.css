@@ -84,13 +84,27 @@
         background: url('../images/sravni_mobile_logo.svg') no-repeat left top;
     }
 
+    .darkHeader p {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .whiteHeader {
+        padding: 30px 0 50px;
+    }
+
+    .whiteHeader p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
     /* howToSaveMoney */
 
     .howToSaveMoney {
         height: auto;
     }
 
-    .mainSlogan {
+    .howToSaveMoney .mainSlogan {
         padding-top: 20px;
         width: 100%;
         font-size: 45px;
@@ -231,5 +245,324 @@
         width: auto;
         font-size: 18px;
         line-height: 21px;
+    }
+
+    .submitForm {
+        width: 100%;
+        box-sizing: border-box;
+        height: 66px;
+        background: #EA5616;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* allYouHaveToKnow */
+
+    .allYouHaveToKnow {
+        height: auto;
+        padding-bottom: 397px;
+    }
+
+    .allYouHaveToKnow .mainSlogan {
+        padding-top: 20px;
+        width: auto;
+        font-size: 45px;
+        line-height: 53px;
+    }
+
+    .allYouHaveToKnowIcon {
+        position: absolute;
+        left: 50%;
+        top: 414px;
+        margin-left: -198px;
+    }
+
+    /* whatIsItAbout */
+
+    .whatIsItAbout {
+        padding: 20px 0 19px;
+    }
+
+    .whatIsItAbout p {
+        width: 314px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    /* fastPaymentInfo */
+
+    .fastPaymentInfo {
+        position: relative;
+        padding: 30px 0 400px;
+    }
+
+    .fastPaymentInfo p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .fastPaymentInfoIcon {
+        display: none;
+    }
+
+    /* howItWorks */
+
+    .howItWorks {
+        padding: 20px 0;
+    }
+
+    .howItWorks p {
+        width: 300px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .howItWorksIcon {
+        position: absolute;
+        left: 50%;
+        margin-left: -178px;
+        top: -369px;
+        width: 357px;
+        height: 316px;
+        background: url('../images/how_it_works_mobile.svg') no-repeat left top;
+    }
+
+    /* instruction */
+
+    .instruction {
+        padding: 30px 0 20px;
+    }
+
+    /* benefitsOfQR */
+
+    .benefitsOfQR {
+        padding: 20px 0;
+    }
+
+    .benefitsOfQR p {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .benefitsOfQRIcon {
+        display: none;
+    }
+
+    /* tellMeAboutBenefits */
+
+    .tellMeAboutBenefits {
+        padding: 30px 0 216px;
+    }
+
+    .tellMeAboutBenefitsIcon {
+        position: absolute;
+        left: 50%;
+        margin-left: -195px;
+        top: 356px;
+        width: 391px;
+        height: 166px;
+        background: url('../images/big_qr_mobile.svg') no-repeat left top;
+    }
+
+    .tellMeAboutBenefits p {
+        width: 320px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .tellMeAboutBenefits .percent {
+        padding: 20px 0 30px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .tellMeAboutBenefits .remark {
+        width: 360px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    /* whatINeedToUseQR */
+
+    .whatINeedToUseQRIcon {
+        display: none;
+    }
+
+    .whatINeedToUseQR p {
+        width: 340px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    /* thatIsWhatYouNeed */
+
+    .thatIsWhatYouNeed {
+        position: relative;
+        padding: 31px 0 430px;
+    }
+
+    .thatIsWhatYouNeed p {
+        width: 380px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .thatIsWhatYouNeedIcon {
+        position: absolute;
+        left: 50%;
+        margin-left: -205px;
+        top: 238px;
+        width: 410px;
+        height: 372px;
+        background: url('../images/pay_via_qr_mobile.svg') no-repeat left top;
+    }
+
+    /* wasPaymentSuccessful */
+
+    .wasPaymentSuccessfulIcon {
+        display: none;
+    }
+
+    .wasPaymentSuccessful p {
+        width: 337px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    /* bankInformsYou */
+
+    .bankInformsYou {
+        padding: 30px 0;
+    }
+
+    .bankInformsYou p {
+        width: 380px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* isItSafe */
+
+    .isItSafeIcon {
+        display: none;
+    }
+
+    /* uniqueQR */
+
+    .uniqueQR {
+        padding: 30px 0 290px;
+    }
+
+    .uniqueQRIcon {
+        position: absolute;
+        left: 50%;
+        margin-left: -201px;
+        top: 156px;
+        width: 402px;
+        height: 210px;
+        background: url('../images/unique_qr_mobile.svg') no-repeat left top;
+    }
+
+    .uniqueQR p {
+        width: 380px;
+    }
+
+    /* howLongDoesQRLive */
+
+    .howLongDoesQRLive {
+        padding: 20px 0;
+    }
+
+    .howLongDoesQRLiveIcon {
+        display: none;
+    }
+
+    /* howToMotivate */
+
+    .howToMotivate {
+        padding: 20px 0;
+    }
+
+    .howToMotivateIcon {
+        display: none;
+    }
+
+    /* liveOfQR */
+
+    .liveOfQR {
+        padding: 30px 0 404px;
+    }
+
+    .liveOfQRIcon {
+        position: absolute;
+        left: 50%;
+        margin-left: -194px;
+        top: 156px;
+        width: 389px;
+        height: 324px;
+        background: url('../images/qr_live_mobile.svg') no-repeat left top;
+    }
+
+    /* commissionQR */
+
+    .commissionQR {
+        padding: 30px 0 497px;
+    }
+
+    .commissionQR p {
+        margin-bottom: 25px;
+    }
+
+    .commissionQRIcon {
+        position: absolute;
+        left: 50%;
+        margin-left: -170px;
+        top: 324px;
+        width: 340px;
+        height: 417px;
+        background: url('../images/qr_motivation_mobile.svg') no-repeat left top;
+    }
+
+    /* howToJoinSystem */
+
+    .howToJoinSystem p {
+        padding: 20px 0;
+    }
+
+    /* onlineApplication */
+
+    .onlineApplication {
+        padding: 28px 0 30px;
+    }
+
+    .onlineApplication p {
+        width: 376px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .onlineApplication .submitForm {
+        margin: 30px auto 0;
+    }
+
+    /* shareGuide */
+
+    .shareGuide {
+        padding: 40px 0 66px;
+    }
+
+    .shareGuide p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .shareIcons {
+        width: 358px;
+        margin: 30px auto 0;
+    }
+
+    .shareIcon {
+        width: 38px;
+        height: 38px;
     }
 }

@@ -22,6 +22,7 @@ body {
 /* custom radio-buttons */
 
 /* Customize the label (the container) */
+
 .container {
     display: block;
     position: relative;
@@ -135,7 +136,6 @@ body {
     line-height: 41px;
     color: #323241;
 }
-
 
 .check {
     display: block;
