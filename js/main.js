@@ -15,7 +15,10 @@
     document.getElementById('businessForm').addEventListener('click', onRadioButton, false);
 
     function onRadioButton(event) {
-        console.log(event.target);
+        if (event.target.getAttribute('type') === 'radio') {
+            document.getElementById('submitForm').removeAttribute('disabled');
+            document.getElementById('businessForm').removeEventListener('click', onRadioButton);
+        }
     }
 
 }());

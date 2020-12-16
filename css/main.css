@@ -397,11 +397,10 @@ button.submitForm:disabled {
 
 .allYouHaveToKnow {
     background-color: #323241;
-    height: 418px;
 }
 
 .allYouHaveToKnow .mainSlogan {
-    padding-top: 28px;
+    padding: 28px 0;
     width: 644px;
     font-size: 60px;
     line-height: 71px;

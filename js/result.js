@@ -17,6 +17,11 @@
         window.open(url,'sharer', options);
     }
 
+    document.getElementById('submitForm').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.location = 'https://www.psbank.ru/Business/Acquiring/sbp';
+    }, false);
+
     const formResult = getQueryVariable('data')
 
     switch (formResult) {
@@ -45,6 +50,76 @@
             document.getElementById('benefits_2').innerText = 'Интегрируете систему с кассой по удобному API';
             document.getElementById('benefits_3').innerText = 'К каждой покупке будет сгенерен индивидуальный QR-код, куда будут зашиты ваши реквизиты и сумма платежа';
             document.getElementById('benefits_4').innerText = 'Покупатель сканирует QR-код банковским приложением и подтверждает платеж';
+    }
+
+    switch (formResult) {
+        case 'coffeeCorner':
+            document.getElementById('yourBusiness').innerText = 'кофе-корнер';
+            break;
+        case 'restaurant':
+            document.getElementById('yourBusiness').innerText = 'ресторан';
+            break;
+        case 'internetShop':
+            document.getElementById('yourBusiness').innerText = 'интернет-магазин';
+            break;
+        case 'beautySaloon':
+            document.getElementById('yourBusiness').innerText = 'салон красоты';
+            break;
+        case 'fitness':
+            document.getElementById('yourBusiness').innerText = 'фитнес';
+            break;
+        case 'dealer':
+            document.getElementById('specialCase').innerHTML = 'подключиться <span class="orangeText">к системе быстрых платежей</span>';
+            break;
+        case 'hotel':
+            document.getElementById('yourBusiness').innerText = 'отель';
+            break;
+        case 'medicine':
+            document.getElementById('yourBusiness').innerText = 'медицина';
+            break;
+        case 'retailStore':
+            document.getElementById('yourBusiness').innerText = 'розничный магазин';
+            break;
+        case 'education':
+            document.getElementById('yourBusiness').innerText = 'бизнес';
+            break;
+        case 'other':
+            document.getElementById('yourBusiness').innerText = 'бизнес';
+            break;
+        default:
+            document.getElementById('yourBusiness').innerText = 'бизнес';
+    }
+
+    switch (formResult) {
+        case 'coffeeCorner': // 1
+        case 'restaurant': // 2
+            // default
+            break;
+        case 'internetShop': // 3
+        case 'beautySaloon': // 4
+            document.getElementById('specialBenefits').innerHTML = `
+                <p>Если вы продаете продукты, игрушки, книги, спорттовары, бытовую технику, то комиссия</p>
+                <p class="percent">0,4%</p>
+            `;
+            break;
+        case 'medicine': // 9
+            document.getElementById('specialBenefits').innerHTML = `
+                <p>Комиссия для образовательных проектов</p>
+                <p class="percent">0,4%</p>
+            `;
+            break;
+        case 'education':
+            document.getElementById('specialBenefits').innerHTML = `
+                <p>Комиссия для медицинских учреждений и части аптек</p>
+                <p class="percent">0,4%</p>
+            `;
+            break;
+        default:
+            document.getElementById('specialBenefits').innerHTML = `
+                <p>Для части бизнесов комиссия</p>
+                <p class="percent">0,4%</p>
+                <p class="remark">Узнать вашу комиссию можно при подключении.</p>
+            `;
     }
 
     const shareText = 'Все, что нужно знать, чтобы подключить ваш бизнес к системе быстрых платежей и экономить.';
