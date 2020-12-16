@@ -12,4 +12,10 @@
         }
     }
 
+    document.getElementById('businessForm').addEventListener('click', onRadioButton, false);
+
+    function onRadioButton(event) {
+        console.log(event.target);
+    }
+
 }());

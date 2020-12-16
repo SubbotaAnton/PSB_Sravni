@@ -389,6 +389,10 @@ body {
     cursor: pointer;
 }
 
+button.submitForm:disabled {
+    background: gray;
+}
+
 /* allYouHaveToKnow */
 
 .allYouHaveToKnow {

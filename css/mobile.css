@@ -11,13 +11,13 @@
     .ellipseIcon {
         width: 95px;
         height: 107px;
-        background: url('../images/stamp_mobile.svg') no-repeat left top;
+        background: url('../images/stamp_mobile.svg') no-repeat center top;
     }
 
     .check {
         width: 16px;
         height: 12px;
-        background: url('../images/check_mobile.svg') no-repeat left top;
+        background: url('../images/check_mobile.svg') no-repeat center top;
         top: 5px;
     }
 
@@ -70,7 +70,7 @@
     .psbIcon {
         width: 98px;
         height: 30px;
-        background: url('../images/psb_mobile_logo.svg') no-repeat left top;
+        background: url('../images/psb_mobile_logo.svg') no-repeat center top;
     }
 
     .sravniLogo {
@@ -81,7 +81,7 @@
     .sravniIcon {
         width: 163px;
         height: 30px;
-        background: url('../images/sravni_mobile_logo.svg') no-repeat left top;
+        background: url('../images/sravni_mobile_logo.svg') no-repeat center top;
     }
 
     .darkHeader p {
@@ -272,9 +272,10 @@
 
     .allYouHaveToKnowIcon {
         position: absolute;
-        left: 50%;
         top: 414px;
-        margin-left: -198px;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
     }
 
     /* whatIsItAbout */
@@ -319,12 +320,11 @@
 
     .howItWorksIcon {
         position: absolute;
-        left: 50%;
-        margin-left: -178px;
         top: -369px;
-        width: 357px;
-        height: 316px;
-        background: url('../images/how_it_works_mobile.svg') no-repeat left top;
+        width: 100%;
+        min-height: 316px;
+        background-size: contain;
+        background: url('../images/how_it_works_mobile.svg') no-repeat center top;
     }
 
     /* instruction */
@@ -356,12 +356,13 @@
 
     .tellMeAboutBenefitsIcon {
         position: absolute;
-        left: 50%;
-        margin-left: -195px;
+        left: auto;
+        right: auto;
         top: 356px;
-        width: 391px;
-        height: 166px;
-        background: url('../images/big_qr_mobile.svg') no-repeat left top;
+        width: 100%;
+        min-height: 166px;
+        background-size: contain;
+        background: url('../images/big_qr_mobile.svg') no-repeat center top;
     }
 
     .tellMeAboutBenefits p {
@@ -414,7 +415,7 @@
         top: 238px;
         width: 410px;
         height: 372px;
-        background: url('../images/pay_via_qr_mobile.svg') no-repeat left top;
+        background: url('../images/pay_via_qr_mobile.svg') no-repeat center top;
     }
 
     /* wasPaymentSuccessful */
@@ -460,7 +461,7 @@
         top: 156px;
         width: 402px;
         height: 210px;
-        background: url('../images/unique_qr_mobile.svg') no-repeat left top;
+        background: url('../images/unique_qr_mobile.svg') no-repeat center top;
     }
 
     .uniqueQR p {
@@ -500,7 +501,7 @@
         top: 156px;
         width: 389px;
         height: 324px;
-        background: url('../images/qr_live_mobile.svg') no-repeat left top;
+        background: url('../images/qr_live_mobile.svg') no-repeat center top;
     }
 
     /* commissionQR */
@@ -520,7 +521,7 @@
         top: 324px;
         width: 340px;
         height: 417px;
-        background: url('../images/qr_motivation_mobile.svg') no-repeat left top;
+        background: url('../images/qr_motivation_mobile.svg') no-repeat center top;
     }
 
     /* howToJoinSystem */
