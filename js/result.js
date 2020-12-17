@@ -19,7 +19,7 @@
 
     document.getElementById('submitForm').addEventListener('click', function (event) {
         event.preventDefault();
-        document.location = 'https://www.psbank.ru/Business/Acquiring/sbp';
+        document.location = 'https://www.psbank.ru/Business/Acquiring/sbp?utm_source=sravni&utm_medium=cpm&utm_campaign=msb_sbp_sravni_guide';
     }, false);
 
     const formResult = getQueryVariable('data')
