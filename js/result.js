@@ -26,16 +26,75 @@
 
     switch (formResult) {
         case 'coffeeCorner': // 1
+            // Сколько живет QR-код?
+            document.getElementById('liveOfQR').innerText = 'Наклейка с QR-кодом создает один раз для вашей компании и действует бессрочно.';
+            break;
         case 'dealer': // 7
             // Сколько живет QR-код?
-            document.getElementById('liveOfQR').innerText = 'Наклейка с QR-кодом генерится один раз для вашей компании и действует бессрочно.';
+            document.getElementById('liveOfQR').innerText = 'Наклейка с QR-кодом создает один раз для вашей компании и действует бессрочно.';
+            document.getElementById('benefits_1').innerText = 'Вы заключаете договор с банком, который поддерживает СБП';
+            document.getElementById('benefits_2').innerText = 'Для оплаты не нужны терминалы и касса';
+            document.getElementById('benefits_3').innerText = 'Вам предоставляют уникальный QR-код. В него «зашиты» ваши реквизиты. Вы распечатываете его и размещаете на видном месте';
+            document.getElementById('benefits_4').innerText = 'Покупатель сканирует QR-код банковским приложением, вносит и подтверждает сумму - платеж проведен!';
+            document.getElementById('commissionQRText').innerHTML = `
+                <p>Чтобы сделать оплату по QR-коду привычной для покупателей, можно мотивировать их с помощью бонусов и подарков.</p>
+                <p>Это не только сэкономит деньги вашему бизнесу, но и повысит лояльность клиентов</p>
+            `
+            break;
+        case 'restaurant': // 2
+            document.getElementById('whatINeedToUseQRText').innerText = 'Что должно быть у гостя заведения, чтобы оплатить услугу с помощью QR-кода?';
+            document.getElementById('thatIsWhatYouNeedText').innerText = `
+                У гостя ресторана должно быть загружено на телефон приложение банка, 
+                который подключен к СБП. Сейчас это все топ-банки России. 
+                Нужно открыть приложение, выбрать пункт - «Оплатить по QR-коду», отсканировать его и подтвердить оплату
+            `;
+            document.getElementById('commissionQRText').innerHTML = `
+                <p>Чтобы сделать оплату по QR-коду привычной для посетителей, можно мотивировать их с помощью бонусов и подарков.</p>
+                <p>Это не только сэкономит деньги вашему бизнесу, но и повысит лояльность клиентов</p>
+            `
             break;
         case 'internetShop': // 4
             // как работает система быстрых платежей
             document.getElementById('benefits_1').innerText = 'Вы заключаете договор с банком, который поддерживает СБП';
             document.getElementById('benefits_2').innerText = 'Интегрируете систему с кассой по удобному API';
-            document.getElementById('benefits_3').innerText = 'Каждому покупателю в корзине предлагается отсканировать QR-код и провести оплату';
-            document.getElementById('benefits_4').innerText = 'Также QR-наклейку можно приклеивать или вкладывать в доставку';
+            document.getElementById('benefits_3').innerText = 'Каждому покупателю предлагается отсканировать QR-код и провести оплату';
+            document.getElementById('benefits_4').innerText = 'Также для расчетов с курьером QR-код можно распечатать и приложить к товару при доставке';
+            document.getElementById('commissionQRText').innerHTML = `
+                <p>Чтобы сделать оплату по QR-коду привычной для посетителей, можно мотивировать их с помощью бонусов и подарков.</p>
+                <p>Это не только сэкономит деньги вашему бизнесу, но и повысит лояльность клиентов</p>
+            `
+            break;
+        case 'beautySaloon': // 12
+            document.getElementById('benefits_1').innerText = 'Вы заключаете договор с банком, который поддерживает СБП';
+            document.getElementById('benefits_2').innerText = 'Интегрируете систему с кассой по удобному API';
+            document.getElementById('benefits_3').innerText = 'К каждой покупке будет сгенерирован индивидуальный QR-код, куда будут «зашиты» ваши реквизиты и сумма платежа';
+            document.getElementById('benefits_4').innerText = 'Клиент сканирует QR-код банковским приложением и подтверждает платеж';
+            document.getElementById('whatINeedToUseQRText').innerText = 'Что должно быть у клиента, чтобы оплатить услугу с помощью QR-кода?';
+            document.getElementById('thatIsWhatYouNeedText').innerText = `
+                У клиента должно быть загружено на телефон приложение банка, 
+                который подключен к СБП. Сейчас это все топ-банки России. 
+                Нужно открыть приложение, выбрать пункт - «Оплатить по QR-коду», отсканировать его и подтвердить оплату
+            `;
+            document.getElementById('commissionQRText').innerHTML = `
+                <p>Чтобы сделать оплату по QR-коду привычной для посетителей, можно мотивировать их с помощью бонусов и подарков.</p>
+                <p>Это не только сэкономит деньги вашему бизнесу, но и повысит лояльность клиентов</p>
+            `
+            break;
+        case 'fitness':
+            document.getElementById('benefits_1').innerText = 'Вы заключаете договор с банком, который поддерживает СБП';
+            document.getElementById('benefits_2').innerText = 'Интегрируете систему с кассой по удобному API';
+            document.getElementById('benefits_3').innerText = 'К каждой покупке будет сгенерирован индивидуальный QR-код, куда будут «зашиты» ваши реквизиты и сумма платежа';
+            document.getElementById('benefits_4').innerText = 'Посетитель сканирует QR-код банковским приложением и подтверждает платеж';
+            document.getElementById('whatINeedToUseQRText').innerText = 'Что должно быть у посетителя, чтобы оплатить услугу с помощью QR-кода?';
+            document.getElementById('thatIsWhatYouNeedText').innerText = `
+                У посетителя должно быть загружено на телефон приложение банка, 
+                который подключен к СБП. Сейчас это все топ-банки России. 
+                Нужно открыть приложение, выбрать пункт - «Оплатить по QR-коду», отсканировать его и подтвердить оплату
+            `;
+            document.getElementById('commissionQRText').innerHTML = `
+                <p>Чтобы сделать оплату по QR-коду привычной для посетителей, можно мотивировать их с помощью бонусов и подарков.</p>
+                <p>Это не только сэкономит деньги вашему бизнесу, но и повысит лояльность клиентов</p>
+            `
             break;
         case 'other': // 12
             // как работает система быстрых платежей
@@ -48,7 +107,7 @@
             // как работает система быстрых платежей
             document.getElementById('benefits_1').innerText = 'Вы заключаете договор с банком, который поддерживает СБП';
             document.getElementById('benefits_2').innerText = 'Интегрируете систему с кассой по удобному API';
-            document.getElementById('benefits_3').innerText = 'К каждой покупке будет сгенерен индивидуальный QR-код, куда будут зашиты ваши реквизиты и сумма платежа';
+            document.getElementById('benefits_3').innerText = 'К каждой покупке будет сгенерирован индивидуальный QR-код, куда будут «зашиты» ваши реквизиты и сумма платежа';
             document.getElementById('benefits_4').innerText = 'Покупатель сканирует QR-код банковским приложением и подтверждает платеж';
     }
 
@@ -96,15 +155,29 @@
             // default
             break;
         case 'internetShop': // 3
-        case 'beautySaloon': // 4
             document.getElementById('specialBenefits').innerHTML = `
                 <p>Если вы продаете продукты, игрушки, книги, спорттовары, бытовую технику, то комиссия</p>
                 <p class="percent">0,4%</p>
             `;
             break;
+        case 'beautySaloon': // 4
+            document.getElementById('specialBenefits').style.display = 'none';
+            break;
         case 'medicine': // 9
             document.getElementById('specialBenefits').innerHTML = `
                 <p>Комиссия для образовательных проектов</p>
+                <p class="percent">0,4%</p>
+            `;
+            break;
+        case 'fitness':
+            document.getElementById('specialBenefits').innerHTML = `
+                <p>Для отдельных категорий товаров и услуг комиссия</p>
+                <p class="percent">0,4%</p>
+            `;
+            break;
+        case 'dealer':
+            document.getElementById('specialBenefits').innerHTML = `
+                <p>Для отдельных категорий товаров и услуг комиссия</p>
                 <p class="percent">0,4%</p>
             `;
             break;
