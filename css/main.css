@@ -735,3 +735,39 @@ button.submitForm:disabled {
 .whatsUpIcon {
     background-image: url('../images/whatsup.svg');
 }
+
+@media only screen and (min-width: 641px) and (max-width : 1440px) {
+    .content {
+        width: 880px;
+    }
+
+    .allYouHaveToKnowIcon {
+        right: -140px;
+    }
+
+    .tellMeAboutBenefitsIcon {
+        top: -58px;
+        right: 0;
+        height: 412px;
+        background-size: contain;
+    }
+
+    .howLongDoesQRLiveIcon {
+        top: -80px;
+        width: 300px;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width : 1680px) {
+    .content {
+        width: 880px;
+    }
+
+    .tellMeAboutBenefitsIcon {
+        top: -58px;
+        right: 0;
+        height: 412px;
+        background-size: contain;
+    }
+}
